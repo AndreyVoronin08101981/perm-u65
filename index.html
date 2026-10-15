@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ТСЖ «Адмирала Ушакова, 65» — Пермь</title>
+  <meta name="description" content="Информационный сайт для собственников и жильцов дома по ул. Адмирала Ушакова, 65 в Перми: контакты, новости, обслуживающие организации.">
+  <meta name="theme-color" content="#1d4e63">
+
+  <link rel="icon" href="assets/img/favicon-32.jpg" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon-192.jpg" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.jpg">
+
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-root-margin="-80px 0px -55%" tabindex="0">
+
+<a class="visually-hidden-focusable skip-link" href="#main">Перейти к содержимому</a>
+
+<!-- ============ Навигация ============ -->
+<nav id="mainNav" class="navbar navbar-expand-xl fixed-top site-nav" aria-label="Основное меню">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#top">
+      <img src="assets/img/logo.png" alt="" width="52" height="36" class="brand-logo">
+      <span class="brand-text">ТСЖ <span class="d-none d-sm-inline">«Ушакова, 65»</span><span class="d-sm-none">Ушакова 65</span></span>
+    </a>
+
+    <a class="btn btn-emergency btn-sm d-xl-none ms-auto me-2" href="tel:+73422582285" aria-label="Позвонить диспетчеру">
+      <i class="bi bi-telephone-fill"></i>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+            aria-controls="navMenu" aria-expanded="false" aria-label="Открыть меню">
+      <span class="toggler-bar"></span><span class="toggler-bar"></span><span class="toggler-bar"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#news">Новости</a></li>
+        <li class="nav-item"><a class="nav-link" href="#residents">Жителям</a></li>
+        <li class="nav-item"><a class="nav-link" href="#access">Въезд</a></li>
+        <li class="nav-item"><a class="nav-link" href="#management">Правление</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Службы</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">О доме</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+      </ul>
+      <a class="btn btn-emergency btn-sm ms-xl-3 d-none d-xl-inline-flex" href="tel:+73422582285">
+        <i class="bi bi-telephone-fill"></i> 258-22-85
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============ Первый экран ============ -->
+<header id="top" class="hero">
+  <div class="container">
+    <div class="row align-items-center g-4 g-lg-5">
+      <div class="col-lg-6 order-2 order-lg-1 reveal">
+        <span class="kicker">Пермь · Кировский район</span>
+        <h1 class="hero-title">ТСЖ «Адмирала Ушакова,&nbsp;65»</h1>
+        <p class="hero-lead">Информационный портал для собственников и жильцов дома: важные телефоны, новости, обслуживающие организации и документы.</p>
+
+        <ul class="hero-notes list-unstyled">
+          <li><i class="bi bi-people"></i> Комфорт жителей</li>
+          <li><i class="bi bi-shield-check"></i> Безопасность и порядок</li>
+          <li><i class="bi bi-tree"></i> Благоустройство и развитие</li>
+        </ul>
+
+        <div class="d-flex flex-wrap gap-2 gap-sm-3">
+          <a class="btn btn-primary btn-lg" href="#residents"><i class="bi bi-telephone"></i> Важные телефоны</a>
+          <a class="btn btn-outline-primary btn-lg" href="#news"><i class="bi bi-newspaper"></i> Новости дома</a>
+        </div>
+      </div>
+
+      <div class="col-lg-6 order-1 order-lg-2 reveal">
+        <figure class="hero-photo">
+          <img src="assets/img/courtyard.jpg" alt="Двор дома на ул. Адмирала Ушакова, 65: детская и спортивная площадки" width="779" height="520">
+          <figcaption class="hero-photo-badge">
+            <i class="bi bi-geo-alt-fill"></i>
+            <span>ул. Адмирала Ушакова, 65</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-hint d-none d-md-flex" href="#news" aria-label="Прокрутить к новостям"><i class="bi bi-chevron-down"></i></a>
+</header>
+
+<main id="main">
+
+  <!-- ============ Новости (каркас) ============
+       Блок будет наполняться автоматически сообщениями из канала ТСЖ в MAX.
+       Сейчас — только вёрстка: заглушки-скелетоны и шаблон карточки.
+       Импорт подключается позднее: скрипт берёт данные из источника,
+       указанного в data-source, и для каждой записи клонирует
+       <template id="news-card-template">, заполняя поля data-news-*.
+       Формат записи — см. data/news.example.json. -->
+  <section id="news" class="section section-news">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">Канал ТСЖ в MAX</span>
+          <h2 class="section-title">Новости дома</h2>
+        </div>
+        <p class="section-lead">Объявления, отключения, собрания и оперативная информация — сообщения публикуются здесь автоматически из официального канала.</p>
+      </div>
+
+      <div id="news-list" class="row g-4" data-source="data/news.json" aria-live="polite" aria-busy="true">
+        <!-- Заглушки на время загрузки. Скрипт импорта заменит их карточками. -->
+        <div class="col-md-6 col-xl-4">
+          <article class="news-card news-card--skeleton" aria-hidden="true">
+            <div class="news-card-media placeholder-glow"><span class="placeholder w-100 h-100"></span></div>
+            <div class="news-card-body placeholder-glow">
+              <span class="placeholder col-4 mb-3"></span>
+              <span class="placeholder placeholder-lg col-10 mb-2"></span>
+              <span class="placeholder col-12"></span>
+              <span class="placeholder col-11"></span>
+              <span class="placeholder col-7"></span>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <article class="news-card news-card--skeleton" aria-hidden="true">
+            <div class="news-card-body placeholder-glow">
+              <span class="placeholder col-3 mb-3"></span>
+              <span class="placeholder placeholder-lg col-9 mb-2"></span>
+              <span class="placeholder col-12"></span>
+              <span class="placeholder col-12"></span>
+              <span class="placeholder col-10"></span>
+              <span class="placeholder col-12"></span>
+              <span class="placeholder col-6"></span>
+            </div>
+          </article>
+        </div>
+        <div class="col-md-6 col-xl-4 d-none d-md-block">
+          <article class="news-card news-card--skeleton" aria-hidden="true">
+            <div class="news-card-media placeholder-glow"><span class="placeholder w-100 h-100"></span></div>
+            <div class="news-card-body placeholder-glow">
+              <span class="placeholder col-4 mb-3"></span>
+              <span class="placeholder placeholder-lg col-8 mb-2"></span>
+              <span class="placeholder col-12"></span>
+              <span class="placeholder col-9"></span>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Сообщение на случай, когда новостей нет или источник недоступен -->
+      <div id="news-empty" class="news-empty d-none">
+        <i class="bi bi-chat-square-text"></i>
+        <p class="mb-0">Пока новостей нет. Свежие объявления всегда есть в канале ТСЖ в MAX.</p>
+      </div>
+
+      <div class="news-footer reveal">
+        <div class="news-footer-text">
+          <i class="bi bi-broadcast"></i>
+          <span>Подпишитесь, чтобы получать объявления первыми</span>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          <a class="btn btn-max" href="https://max.ru/join/JMJqsb_WqroJgdcPxYpOINYYiCsC8qIgj4l86Tgh3Bo" target="_blank" rel="noopener">
+            <span class="max-mark">MAX</span> Канал в MAX
+          </a>
+          <a class="btn btn-outline-primary" href="https://t.me/+mxxdA1eIvkMyNjEy" target="_blank" rel="noopener">
+            <i class="bi bi-telegram"></i> Telegram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Шаблон карточки новости для будущего импорта из MAX -->
+    <template id="news-card-template">
+      <div class="col-md-6 col-xl-4">
+        <article class="news-card">
+          <a class="news-card-media" data-news-link target="_blank" rel="noopener">
+            <img data-news-image alt="" loading="lazy">
+          </a>
+          <div class="news-card-body">
+            <time class="news-card-date" data-news-date></time>
+            <h3 class="news-card-title" data-news-title></h3>
+            <p class="news-card-text" data-news-text></p>
+            <a class="news-card-more" data-news-link target="_blank" rel="noopener">Открыть в MAX <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </article>
+      </div>
+    </template>
+  </section>
+
+  <!-- ============ Информация для жителей ============ -->
+  <section id="residents" class="section section-tint">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">Самое нужное</span>
+          <h2 class="section-title">Информация для жителей</h2>
+        </div>
+        <p class="section-lead">Телефоны, режим работы и контакты, которые чаще всего нужны в повседневных и аварийных ситуациях.</p>
+      </div>
+
+      <h3 class="group-title reveal"><i class="bi bi-exclamation-triangle"></i> Экстренные и повседневные контакты</h3>
+      <div class="row g-4">
+        <div class="col-lg-7 reveal">
+          <article class="info-card info-card--emergency h-100">
+            <div class="info-card-head">
+              <span class="info-icon"><i class="bi bi-tools"></i></span>
+              <div>
+                <span class="badge-soft badge-soft--alert">Круглосуточно</span>
+                <h4 class="info-card-title">Диспетчер — аварийная служба</h4>
+              </div>
+            </div>
+            <a class="phone-big" href="tel:+73422582285">258-22-85 <small>доб. 1</small></a>
+            <p class="info-card-text">Электрик, слесарь, плотник. Для онлайн-заявки можно использовать сервис диспетчерской.</p>
+            <a class="btn btn-emergency" href="https://v1.doma.ai/auth?next=/ticket" target="_blank" rel="noopener">
+              Подать заявку онлайн <i class="bi bi-box-arrow-up-right"></i>
+            </a>
+          </article>
+        </div>
+        <div class="col-lg-5 reveal">
+          <article class="info-card h-100">
+            <div class="info-card-head">
+              <span class="info-icon"><i class="bi bi-shield-check"></i></span>
+              <div>
+                <span class="badge-soft">Круглосуточно</span>
+                <h4 class="info-card-title">Вахтер</h4>
+              </div>
+            </div>
+            <a class="phone-big" href="tel:+79824431878">8 982-443-18-78</a>
+          </article>
+        </div>
+      </div>
+
+      <!-- Доступ на территорию -->
+      <div id="access" class="access-block reveal">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-5">
+            <span class="kicker">Доступ на территорию</span>
+            <h3 class="group-title mb-3">Ворота и шлагбаумы</h3>
+            <p class="mb-0 text-body-secondary">Без регистрации въезд невозможен! Доступ осуществляется набором специального номера телефона с добавочным номером в тоновом режиме.</p>
+          </div>
+          <div class="col-lg-7">
+            <article class="info-card">
+              <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 mb-3">
+                <a class="phone-big mb-0" href="tel:+79122691269">8-912-269-1-269</a>
+                <a class="btn btn-primary" href="https://app.safentry.ru/auth" target="_blank" rel="noopener">
+                  Приложение доступа <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+              </div>
+              <ul class="ext-list list-unstyled mb-0">
+                <li><span class="ext-num">1</span> Ворота</li>
+                <li><span class="ext-num">2</span> Шлагбаум с ул. Ушакова</li>
+                <li><span class="ext-num">3</span> Шлагбаум с ул. 5-я Каховская</li>
+                <li><span class="ext-num">4</span> Шлагбаум с ул. Волгодонской, д. 26</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <!-- Правление -->
+      <div id="management" class="pt-2">
+        <div class="section-subhead reveal">
+          <span class="kicker">Управление домом</span>
+          <h3 class="group-title">Правление, управляющий и приём жителей</h3>
+          <p class="text-body-secondary mb-0">Контакты ответственных лиц и информация о приёме жителей собраны в одном месте.</p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-sm-6 col-xl-3 reveal">
+            <article class="info-card h-100">
+              <span class="info-icon"><i class="bi bi-person"></i></span>
+              <span class="badge-soft">Председатель правления</span>
+              <h4 class="info-card-title">Сальников Александр Александрович</h4>
+              <a class="phone" href="tel:+79128804490">8-912-880-44-90</a>
+              <p class="info-card-text small mb-0">Пн–Пт 9:00–18:00, обед 13:00–14:00.<br>Сб–Вс — выходной.</p>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-3 reveal">
+            <article class="info-card h-100">
+              <span class="info-icon"><i class="bi bi-person-badge"></i></span>
+              <span class="badge-soft">Управляющий</span>
+              <h4 class="info-card-title">Самойлова Елена Васильевна</h4>
+              <a class="phone" href="tel:+79222417578">8-922-241-75-78</a>
+              <p class="info-card-text small mb-0">Пн–Пт 9:00–18:00, обед 13:00–14:00.<br>Сб–Вс — выходной.</p>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-3 reveal">
+            <article class="info-card h-100">
+              <span class="info-icon"><i class="bi bi-calculator"></i></span>
+              <span class="badge-soft">Вт, Чт 11:00–13:00</span>
+              <h4 class="info-card-title">Бухгалтерия</h4>
+              <a class="phone" href="tel:+79292334220">8-929-233-42-20</a>
+              <a class="email" href="mailto:ushakova65buh@mail.ru"><i class="bi bi-envelope"></i> ushakova65buh@mail.ru</a>
+            </article>
+          </div>
+          <div class="col-sm-6 col-xl-3 reveal">
+            <article class="info-card info-card--accent h-100">
+              <span class="info-icon"><i class="bi bi-door-open"></i></span>
+              <span class="badge-soft">Приём жителей</span>
+              <h4 class="info-card-title">Помещение правления</h4>
+              <p class="info-card-text small">8 подъезд, 1 этаж, домофон 900.</p>
+              <ul class="schedule list-unstyled small">
+                <li><span>Вторник</span><span>11:00–13:00</span></li>
+                <li><span>Четверг</span><span>17:00–19:00</span></li>
+              </ul>
+              <a class="email" href="mailto:perm.u65@yandex.ru"><i class="bi bi-envelope"></i> perm.u65@yandex.ru</a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Обслуживающие организации ============ -->
+  <section id="services" class="section section-dark">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">Справочная</span>
+          <h2 class="section-title">Обслуживающие организации</h2>
+        </div>
+        <p class="section-lead">Куда обращаться по электричеству, воде, связи, лифтам и гарантийному ремонту.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-xl-4 reveal">
+          <article class="service-card h-100">
+            <span class="service-icon"><i class="bi bi-lightning-charge"></i></span>
+            <span class="service-org">ПАО «Пермэнергосбыт»</span>
+            <h3 class="service-title">Электроэнергия</h3>
+            <p>Передача показаний электросчётчиков Т1/Т2 и показаний ГВС (подогрев воды). Рекомендуемый период передачи — с 23 по 25 число месяца.</p>
+            <dl class="service-meta">
+              <dt>Телефон</dt><dd><a href="tel:+73422006300">200-63-00</a></dd>
+              <dt>Адрес</dt><dd>ул. Маршала Рыбалко, 18</dd>
+              <dt>Часы</dt><dd>Пн–Пт 08:00–17:00, перерыв 12:00–13:00</dd>
+            </dl>
+            <div class="service-actions">
+              <a class="btn btn-light btn-sm" href="https://permenergosbyt.ru/" target="_blank" rel="noopener">Сайт</a>
+              <a class="btn btn-outline-light btn-sm" href="https://lk.permenergosbyt.ru/" target="_blank" rel="noopener">Личный кабинет</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 reveal">
+          <article class="service-card h-100">
+            <span class="service-icon"><i class="bi bi-droplet"></i></span>
+            <span class="service-org">ООО «Новогор-Прикамье»</span>
+            <h3 class="service-title">Водоснабжение</h3>
+            <p>Передача показаний счётчиков ГВС и ХВС — с 23 по 25 число месяца. По авариям на водопроводе и канализации диспетчерская работает круглосуточно.</p>
+            <dl class="service-meta">
+              <dt>Телефон</dt><dd><a href="tel:+73422100680">210-06-80</a></dd>
+              <dt>Контакт-центр</dt><dd><a href="tel:+73422019530">201-95-30</a></dd>
+              <dt>Адрес</dt><dd>ул. Адмирала Ушакова, 36Б</dd>
+              <dt>Часы</dt><dd>Пн, Вт, Чт, Пт 08:00–17:00; Ср 10:00–19:00</dd>
+            </dl>
+            <div class="service-actions">
+              <a class="btn btn-light btn-sm" href="https://novogor.perm.ru/" target="_blank" rel="noopener">Сайт</a>
+              <a class="btn btn-outline-light btn-sm" href="https://lk.novogor.perm.ru/" target="_blank" rel="noopener">Личный кабинет</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 reveal">
+          <article class="service-card h-100">
+            <span class="service-icon"><i class="bi bi-wifi"></i></span>
+            <span class="service-org">Дом.ру</span>
+            <h3 class="service-title">Интернет, ТВ и домофон</h3>
+            <p>Подключение интернета, телевидения, домофонии, прошивка ключей и вопросы видеонаблюдения.</p>
+            <dl class="service-meta">
+              <dt>Телефон</dt><dd><a href="tel:+73422079318">207-93-18</a> / <a href="tel:88002507777">8 800 250-77-77</a></dd>
+              <dt>Менеджеры</dt><dd>Вячеслав <a href="tel:+79125809907">+7 912 580-99-07</a><br>Тарас <a href="tel:+79526596207">+7 952 659-62-07</a></dd>
+            </dl>
+            <div class="service-actions">
+              <a class="btn btn-light btn-sm" href="https://perm.dom.ru/" target="_blank" rel="noopener">Сайт</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 offset-xl-2 reveal">
+          <article class="service-card h-100">
+            <span class="service-icon"><i class="bi bi-arrow-down-up"></i></span>
+            <span class="service-org">ООО «Лифт-Сервис»</span>
+            <h3 class="service-title">Лифты</h3>
+            <p>Диспетчерская по вопросам работы лифтов и правила безопасного пользования.</p>
+            <dl class="service-meta">
+              <dt>Телефон</dt><dd><a href="tel:+73422827391">282-73-91</a></dd>
+              <dt>Адрес</dt><dd>ул. Лодыгина, 40</dd>
+              <dt>Часы</dt><dd>Диспетчерская — круглосуточно</dd>
+            </dl>
+            <div class="service-actions">
+              <a class="btn btn-light btn-sm" href="https://lift.perm.ru/" target="_blank" rel="noopener">Сайт</a>
+              <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#liftRules">Правила пользования</button>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-12 col-xl-4 reveal">
+          <article class="service-card h-100">
+            <span class="service-icon"><i class="bi bi-wrench-adjustable"></i></span>
+            <span class="service-org">АО «ПЗСП»</span>
+            <h3 class="service-title">Гарантийный ремонт</h3>
+            <p>По вопросам гарантийного ремонта от застройщика используйте официальную страницу ПЗСП.</p>
+            <div class="service-actions">
+              <a class="btn btn-light btn-sm" href="https://pzsp.ru/warranty_repair/" target="_blank" rel="noopener">Гарантийный ремонт</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ О доме ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div>
+          <span class="kicker">О доме</span>
+          <h2 class="section-title">О нашем доме</h2>
+        </div>
+        <p class="section-lead">Ключевые характеристики дома и планировки квартир по подъездам.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 reveal">
+          <div class="address-card h-100">
+            <img src="assets/img/logo.png" alt="Логотип ТСЖ «Ушакова 65»" class="address-logo" width="1049" height="732" loading="lazy">
+            <div>
+            <span class="kicker kicker--light">Наш адрес</span>
+            <p class="address-text">614109, г. Пермь,<br>Кировский район,<br>ул. Адмирала Ушакова, 65</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 reveal stats-wrap">
+          <div class="stats-grid">
+            <div class="stat"><span class="stat-value">47&nbsp;757&nbsp;м²</span><span class="stat-label">Жилая площадь</span></div>
+            <div class="stat"><span class="stat-value">866</span><span class="stat-label">Квартир</span></div>
+            <div class="stat"><span class="stat-value">16</span><span class="stat-label">Этажей</span></div>
+            <div class="stat"><span class="stat-value">8</span><span class="stat-label">Подъездов</span></div>
+            <div class="stat"><span class="stat-value">2,5 м</span><span class="stat-label">Высота потолков</span></div>
+            <div class="stat"><span class="stat-value">Комфорт</span><span class="stat-label">Класс недвижимости</span></div>
+            <div class="stat"><span class="stat-value">Блоки</span><span class="stat-label">Материал стен</span></div>
+            <div class="stat"><span class="stat-value">Под ключ</span><span class="stat-label">Тип отделки</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="layouts reveal">
+        <h3 class="group-title"><i class="bi bi-grid-1x2"></i> Планировки квартир</h3>
+        <div class="layouts-grid">
+          <a class="layout-btn" href="assets/docs/podezd-1.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 1 подъезд</a>
+          <a class="layout-btn" href="assets/docs/podezd-2.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 2 подъезд</a>
+          <a class="layout-btn" href="assets/docs/podezd-3.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 3 подъезд</a>
+          <a class="layout-btn" href="assets/docs/podezd-4.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 4 подъезд</a>
+          <a class="layout-btn" href="assets/docs/podezd-5.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 5 подъезд</a>
+          <a class="layout-btn" href="assets/docs/podezd-6.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 6 подъезд</a>
+          <a class="layout-btn" href="assets/docs/podezd-7.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 7 подъезд</a>
+          <a class="layout-btn" href="assets/docs/podezd-8.pdf" target="_blank" rel="noopener"><i class="bi bi-file-earmark-pdf"></i> 8 подъезд</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ Контакты / подвал ============ -->
+<footer id="contacts" class="site-footer">
+  <div class="container">
+    <div class="row g-4 g-lg-5">
+      <div class="col-lg-5">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <img src="assets/img/logo.png" alt="" width="64" height="45" class="footer-logo">
+          <strong class="footer-brand">ТСЖ «Адмирала Ушакова, 65»</strong>
+        </div>
+        <p class="mb-0">Информационный сайт для собственников и жильцов дома.<br>г. Пермь, ул. Адмирала Ушакова, 65</p>
+      </div>
+      <div class="col-sm-6 col-lg-4">
+        <h2 class="footer-title">Связаться с ТСЖ</h2>
+        <ul class="list-unstyled footer-list">
+          <li><a href="mailto:perm.u65@yandex.ru"><i class="bi bi-envelope"></i> perm.u65@yandex.ru</a></li>
+          <li><a href="tel:+73422582285"><i class="bi bi-telephone"></i> Диспетчер: 258-22-85, доб. 1</a></li>
+          <li><a href="tel:+79824431878"><i class="bi bi-shield-check"></i> Вахтер: 8 982-443-18-78</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h2 class="footer-title">Инфоканалы дома</h2>
+        <ul class="list-unstyled footer-list">
+          <li><a href="https://max.ru/join/JMJqsb_WqroJgdcPxYpOINYYiCsC8qIgj4l86Tgh3Bo" target="_blank" rel="noopener"><span class="max-mark max-mark--sm">MAX</span> Канал в MAX</a></li>
+          <li><a href="https://t.me/+mxxdA1eIvkMyNjEy" target="_blank" rel="noopener"><i class="bi bi-telegram"></i> Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year">2026</span> ТСЖ «Адмирала Ушакова, 65»</span>
+      <a href="#top">Наверх <i class="bi bi-arrow-up"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Кнопка «наверх» -->
+<a href="#top" class="to-top" aria-label="Наверх">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</a>
+
+<!-- ============ Модальное окно: правила пользования лифтом ============ -->
+<div class="modal fade" id="liftRules" tabindex="-1" aria-labelledby="liftRulesTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title fs-4" id="liftRulesTitle">Правила пользования лифтом</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <h3 class="fs-5">Общие правила</h3>
+        <ul class="rules-list">
+          <li>Не раскачивайте кабину и не превышайте допустимую загрузку лифта.</li>
+          <li>Не перевозите воспламеняющиеся и горючие жидкости.</li>
+          <li>Если пол кабины заметно не совпадает с уровнем этажа, не пользуйтесь лифтом и сообщите диспетчеру.</li>
+          <li>При поездках с детьми: взрослый входит первым; маленького ребёнка лучше взять на руки; коляску завозят после того, как взрослый и ребёнок уже в кабине.</li>
+          <li>С животными следите, чтобы питомец и поводок полностью находились внутри кабины.</li>
+          <li>Кнопку «Стоп» используйте только в экстренной ситуации.</li>
+          <li>Не пользуйтесь лифтом при отсутствии освещения, повреждённой панели, видимых проводах и других неисправностях.</li>
+          <li>Курение в лифте запрещено. Соблюдайте чистоту.</li>
+        </ul>
+        <h3 class="fs-5 mt-4">Если лифт остановился</h3>
+        <p>Сохраняйте спокойствие и вызовите диспетчера. Если кнопка вызова не работает — позвоните с мобильного телефона по номеру <a href="tel:+73422827391">282-73-91</a> или привлеките внимание людей снаружи.</p>
+        <div class="alert alert-warning mb-0">
+          <strong>Не открывайте двери кабины и шахты самостоятельно и не пытайтесь выбираться при остановке между этажами — это опасно для жизни.</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
